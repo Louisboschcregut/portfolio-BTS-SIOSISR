@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - BTS SIO SLAM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 100px 10%;
+            min-height: 100vh;
+        }
+
+        #accueil {
+            background: #f1f5f9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #accueil h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        #qui {
+            background: white;
+        }
+
+        #stage {
+            background: #f1f5f9;
+        }
+
+        #realisations {
+            background: white;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 768px) {
+            #accueil h1 {
+                font-size: 2em;
+            }
+
+            nav ul {
+                flex-direction: column;
+                background: #0f172a;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 200px;
+                display: none;
+            }
+
+            nav ul.active {
+                display: block;
+            }
+
+            .menu-toggle {
+                display: block;
+                cursor: pointer;
+            }
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2>Mon Portfolio</h2>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul id="menu">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#qui">Qui suis-je ?</a></li>
+            <li><a href="#stage">Mon stage</a></li>
+            <li><a href="#realisations">Mes réalisations</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="accueil">
+    <h1>Étudiant BTS SIO SISR</h1>
+    <p>Bienvenue sur mon portfolio. Vous trouverez ici mes projets, mes compétences et mon parcours.</p>
+</section>
+
+<section id="qui">
+    <h2>Qui suis-je ?</h2>
+    <div class="qui-container" style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center; margin-top: 20px;">
+        <div class="photo">
+            <img src="Sans titre.jpg" alt="Ma photo" style="width: 200px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        </div>
+
+        <div class="texte" style="max-width: 600px;">
+            <p>
+                Je suis étudiant en 2ème année de <strong>BTS SIO option SISR</strong>.
+                Intéressé par l’administration systèmes, réseaux et la cybersécurité, 
+                j’interviens sur la gestion des infrastructures informatiques, le support utilisateur et
+                la sécurisation des systèmes. Je développe des compétences dans la gestion des réseaux, 
+                la virtualisation, l’automatisation ainsi que dans la protection des données et des accès.
+            </p>
+<br>
+            <p>
+                <strong>Âge :</strong> 21 ans<br>
+                <strong>Diplôme :</strong> BTS SIO SISR (en cours)<br>
+                <strong>Compétences :</strong>Réseaux, cybersécurité, Support technique <br>
+                <strong>Qualités :</strong> Sérieux, motivé, autonome, rigoureux<br>
+                <strong>Objectif :</strong> Devenir Techniciens réseaux
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="stage">
+    <h2>Mon stage</h2>
+<br>
+    <p>
+        Lors de mon stage de BTS SIO, j’ai intégré le service support informatique de l’entreprise Forch où j’ai participé
+au traitement des incidents utilisateurs, à la gestion du parc informatique et à l’assistance technique au quotidien.
+Ce stage m’a permis de travailler en conditions réelles sur des problématiques variées et de développer
+mes compétences techniques et relationnelles. À l’issue de cette expérience, j’ai été recruté en CDI au sein de l’entreprise.
+    </p>
+<br>
+    <p><strong>Exemples de tâches réalisées :</strong></p>
+<br>
+    <ul>
+        <li>Prise en charge et résolution des incidents utilisateurs (support niveau 1)</li>
+        <li>Gestion des tickets via un outil de support (GLPI)</li>
+        <li>Administration des comptes utilisateurs (création, modification, droits) sous Active Directory</li>
+        <li>Installation, configuration et maintenance des postes informatiques</li>
+        <li>Diagnostic et résolution des problèmes matériels et logiciels</li>
+        <li>Rédaction de documentation technique et de procédures</li>
+        <li>Déploiement et configuration de logiciels et équipements</li>
+        <li>Assistance et accompagnement des utilisateurs au quotidien</li>
+    </ul>
+</section>
+
+<section id="realisations">
+    <h2>Mes réalisations</h2>
+    <div class="cards">
+
+        <div class="card">
+            <h3>Projet 1 - Windows Server et Active Directory</h3>
+            <p> faire évoluer l’architecture système (Windows Server et Active Directory) pour accueillir un nouveau client sur le site</p>
+            <a href="realisations-e6.html#projet1" class="btn">Voir le détail</a>
+        </div>
+
+        <div class="card">
+            <h3>Projet 2 - Gestionnaire GLPI</h3>
+            <p>gestion fiable du parc informatique d'une entreprise ainsi qu’un inventaire des matériels.</p>
+            <a href="realisations-e6.html#projet2" class="btn">Voir le détail</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 - Mon Portfolio</p>
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById('menu').classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
