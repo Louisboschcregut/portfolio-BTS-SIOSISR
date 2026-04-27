@@ -1,128 +1,97 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Détail des réalisations - Épreuve E6</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f4f6f9;
-            color: #333;
-        }
+<meta charset="UTF-8">
+<title>Mes Réalisations BTS</title>
 
-        header {
-            background: #0f172a;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+<style>
+body{
+background:#0a0a0f;
+color:white;
+font-family:Arial,sans-serif;
+max-width:1000px;
+margin:auto;
+padding:60px;
+}
 
-        .container {
-            width: 90%;
-            max-width: 1000px;
-            margin: auto;
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
+h1{
+font-size:50px;
+margin-bottom:50px;
+}
 
-        .project {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
+.projet{
+background:#16161f;
+border:1px solid #222230;
+padding:35px;
+margin-bottom:30px;
+}
 
-        .project h2 {
-            color: #0f172a;
-        }
+.projet h2{
+color:#00f5c4;
+margin-bottom:15px;
+}
 
-        .links a {
-            display: block;
-            margin: 8px 0;
-            text-decoration: none;
-            color: #2563eb;
-            font-weight: bold;
-        }
+.projet p{
+line-height:1.7;
+color:#cfcfe6;
+}
 
-        .links a:hover {
-            text-decoration: underline;
-        }
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#00f5c4;
+color:#000;
+text-decoration:none;
+font-weight:bold;
+}
 
-        iframe {
-            width: 100%;
-            height: 400px;
-            margin-top: 15px;
-            border-radius: 10px;
-            border: none;
-        }
+.btn:hover{
+opacity:0.85;
+}
+</style>
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #0f172a;
-            color: white;
-        }
-    </style>
 </head>
 <body>
 
-<header>
-    <h1>Détail de mes réalisations - Épreuve E6</h1>
-</header>
+<h1>Mes réalisations BTS SIO</h1>
 
-<div class="container">
+<div class="projet">
+<h2>Projet GLPI – Gestion de Parc</h2>
 
-    <!-- PROJET 1 -->
-    <div class="project">
-        <h2>Nom du projet</h2>
+<p>
+Déploiement GLPI, inventaire automatisé,
+intégration LDAP, GPO, sauvegardes et HAProxy.
+</p>
 
-        <p>
-            <strong>Présentation du contexte et de l'activité :</strong><br>
-            Décrivez ici en quelques lignes le contexte de l'entreprise ou du projet,
-            le besoin du client et l'objectif de l'application.
-        </p>
-
-        <div class="links">
-            <a href="docs/contexte.pdf" target="_blank">📄 Voir le PDF - Contexte</a>
-            <a href="docs/besoins.pdf" target="_blank">📄 Voir le PDF - Existant et expression des besoins</a>
-            <a href="docs/documentation.pdf" target="_blank">📄 Voir la documentation technique</a>
-            <a href="docs/compte-rendu.pdf" target="_blank">📄 Voir le compte rendu d'activité</a>
-        </div>
-
-        <h3>Vidéo de démonstration</h3>
-        <!-- Remplacer le lien YouTube -->
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
-    </div>
-
-
-    <!-- PROJET 2 -->
-    <div class="project">
-        <h2>Nom du projet 2</h2>
-
-        <p>
-            <strong>Présentation du contexte et de l'activité :</strong><br>
-            Décrivez ici le deuxième projet.
-        </p>
-
-        <div class="links">
-            <a href="docs/contexte2.pdf" target="_blank">📄 Voir le PDF - Contexte</a>
-            <a href="docs/besoins2.pdf" target="_blank">📄 Voir le PDF - Existant et expression des besoins</a>
-            <a href="docs/documentation2.pdf" target="_blank">📄 Voir la documentation technique</a>
-            <a href="docs/compte-rendu2.pdf" target="_blank">📄 Voir le compte rendu d'activité</a>
-        </div>
-
-        <h3>Vidéo de démonstration</h3>
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
-    </div>
+<a href="pdf/Projet_GLPI.pdf"
+target="_blank"
+class="btn">
+Voir le PDF
+</a>
 
 </div>
 
-<footer>
-    <p>© 2026 - Portfolio BTS SIO</p>
-</footer>
+
+<div class="projet">
+<h2>Projet Active Directory – ValoElec</h2>
+
+<p>
+Infrastructure Active Directory, GPO,
+partages sécurisés, PowerShell et Python.
+</p>
+
+<a href="pdf/Projet_AD.pdf"
+target="_blank"
+class="btn">
+Voir le PDF
+</a>
+
+</div>
+
+<a href="index.html" class="btn">
+← Retour Portfolio
+</a>
 
 </body>
 </html>
